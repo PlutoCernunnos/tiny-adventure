@@ -4,7 +4,7 @@ Data sanity, the effects actually reaching AC / crits / max HP through
 gear_effects, random assignment, save/load, and the Path pickers in the
 creator and the main menu.
 
-Run:  xvfb-run -a python3 test_subclasses.py
+Run:  xvfb-run -a python3 tests/test_subclasses.py
 """
 import importlib.util
 import json

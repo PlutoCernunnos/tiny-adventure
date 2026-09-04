@@ -192,24 +192,7 @@ class TinyAdventureGUI(UIMixin, CharacterMixin, CombatMixin, DungeonMixin,
         self._autosave_job = None
         # sound effects (generates the wav files on first run)
         self.init_sounds()
-        # On first launch, open the character creator to guide new players.
-        try:
-            root_dir = game_dir()
-            flag = os.path.join(root_dir, '.tiny_adventure_first_run')
-            self._creator_opened_on_start = False
-            if not os.path.exists(flag):
-                # prefill name if typed
-                typed_name = self.name_entry.get().strip()
-                self.open_character_creator(prefill_name=typed_name)
-                self._creator_opened_on_start = True
-        except Exception:
-            pass
-        # Open main menu unless we already opened the creator for first-run
-        try:
-            if not getattr(self, '_creator_opened_on_start', False):
-                self.open_main_menu()
-        except Exception:
-            pass
+        self.open_main_menu()
 
 def main():
     """Start the game: create the window, build the app, and hand over to Tk."""

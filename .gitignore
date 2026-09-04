@@ -1,18 +1,10 @@
 # Local game data
 /saves/*
-!saves/.gitkeep
-/.tiny_adventure_first_run
 
 # Python-generated files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Test and coverage output
-.pytest_cache/
-.coverage
-coverage.xml
-htmlcov/
 
 # Logs and incomplete downloads
 *.log

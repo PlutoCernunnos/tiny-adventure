@@ -199,14 +199,6 @@ class CharacterMixin:
         self.log_message(
             f"Rolled {', '.join(str(r) for r in rolls)} (4d6 drop lowest) and assigned them "
             f"to a {class_name}'s best abilities.", color='important')
-        # mark first run done for convenience
-        try:
-            root_dir = game_dir()
-            flag = os.path.join(root_dir, '.tiny_adventure_first_run')
-            with open(flag, 'w') as f:
-                f.write('quickstart')
-        except Exception:
-            pass
         self.update_derived_stats()
         self.health = self.max_health
         self.gold = 10 + 30 * (level - 1)
@@ -661,14 +653,6 @@ class CharacterMixin:
             self.name = name_entry.get().strip() or "Adventurer"
             self.gold = 10 + 30 * (start_level - 1)
             creator.destroy()
-            # mark first run complete by creating a small flag file next to the script
-            try:
-                root_dir = game_dir()
-                flag = os.path.join(root_dir, '.tiny_adventure_first_run')
-                with open(flag, 'w') as f:
-                    f.write('created')
-            except Exception:
-                pass
             self.refresh_stats()
             self.refresh_inventory()
             self.refresh_buttons()

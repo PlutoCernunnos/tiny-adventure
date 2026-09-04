@@ -7,7 +7,7 @@ Covers the four reported problems:
  4. too many separate windows (sheet / spellbook / gear are one tabbed window)
 
 Run with a small screen so the clamping is actually exercised:
-    xvfb-run -a -s "-screen 0 1366x768x24" python3 test_ui_fixes.py
+      xvfb-run -a -s "-screen 0 1366x768x24" python3 tests/test_ui_fixes.py
 """
 import importlib.util
 import os

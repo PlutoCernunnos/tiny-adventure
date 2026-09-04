@@ -7,6 +7,5 @@ $WshShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WshShell.CreateShortcut($shortcutPath)
 $Shortcut.TargetPath = $target
 $Shortcut.WorkingDirectory = $scriptDir
-$Shortcut.IconLocation = "$target,0"
 $Shortcut.Save()
 Write-Host "Shortcut created on your Desktop: $shortcutPath"

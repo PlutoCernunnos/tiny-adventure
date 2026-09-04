@@ -463,9 +463,9 @@ table and they update themselves.
 
 There is no display in most automated environments, so the test harness builds a
 real `Tk` root, withdraws it, and stubs out audio and the blocking modal dialogs.
-The suites: `test_fixes.py` (core rules and the action economy),
-`test_subclasses.py`, `test_ui_fixes.py`, `test_dialogs.py`,
-`test_tactics.py` (range, cover, the Move options, enemy AI, morale,
+The suites: `tests/test_fixes.py` (core rules and the action economy),
+`tests/test_subclasses.py`, `tests/test_ui_fixes.py`, `tests/test_dialogs.py`,
+`tests/test_tactics.py` (range, cover, the Move options, enemy AI, morale,
 telegraphs, companions, adaptive difficulty), plus `soak.py` for randomized
 crash-hunting and `balance_probe.py` for pacing numbers.
 Two things are worth knowing if you write more tests:
