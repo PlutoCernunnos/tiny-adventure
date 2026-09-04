@@ -1,0 +1,307 @@
+{
+  "name": "Cass",
+  "char_class": "Fighter",
+  "subclass": "Battle Master",
+  "character_created": true,
+  "strength": 16,
+  "dexterity": 12,
+  "constitution": 14,
+  "intelligence": 9,
+  "wisdom": 10,
+  "charisma": 10,
+  "endurance": 10,
+  "health": 20,
+  "max_health": 28,
+  "gold": 49,
+  "inventory": [
+    "potion",
+    "potion",
+    "torch",
+    "rope",
+    "map",
+    "ration",
+    "rope",
+    "whetstone",
+    "spyglass",
+    "rapier",
+    "climbing gear"
+  ],
+  "known_spells": [],
+  "spell_slots_by_level": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "spell_slots_max_by_level": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "player_level": 1,
+  "xp": 28,
+  "xp_to_next": 100,
+  "map_state": null,
+  "current_event": null,
+  "can_long_rest": false,
+  "second_wind_available": true,
+  "equipped_weapon": "longsword",
+  "equipped_armor": "chain mail",
+  "equipped_shield": "iron shield",
+  "equipped_trinket": null,
+  "asi_pending": 0,
+  "poisoned": 0,
+  "aid_bonus": 0,
+  "mage_armor_active": false,
+  "death_ward": false,
+  "hit_dice": 1,
+  "hit_dice_max": 1,
+  "class_hit_die": 10,
+  "cast_stat": null,
+  "caster_type": null,
+  "class_resource_available": true,
+  "action_surge_available": true,
+  "sneak_available": false,
+  "companion": null,
+  "adaptive_mult": 1.0,
+  "dungeon": {
+    "floor": 1,
+    "size": 5,
+    "pos": [
+      2,
+      1
+    ],
+    "boss_floor": false,
+    "boss_defeated": false,
+    "rooms": {
+      "0,0": {
+        "type": "start",
+        "visited": true,
+        "seen": true,
+        "doors": [
+          "E"
+        ]
+      },
+      "1,0": {
+        "type": "empty",
+        "visited": true,
+        "seen": true,
+        "doors": [
+          "W",
+          "E"
+        ]
+      },
+      "2,0": {
+        "type": "empty",
+        "visited": true,
+        "seen": true,
+        "doors": [
+          "W",
+          "S"
+        ]
+      },
+      "3,0": {
+        "type": "camp",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "E"
+        ]
+      },
+      "4,0": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "S",
+          "W"
+        ]
+      },
+      "0,1": {
+        "type": "stairs",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "S"
+        ]
+      },
+      "1,1": {
+        "type": "treasure",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "E",
+          "S"
+        ]
+      },
+      "2,1": {
+        "type": "empty",
+        "visited": true,
+        "seen": true,
+        "doors": [
+          "N",
+          "W",
+          "E"
+        ]
+      },
+      "3,1": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "S",
+          "E",
+          "W"
+        ]
+      },
+      "4,1": {
+        "type": "trap",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "W",
+          "N"
+        ]
+      },
+      "0,2": {
+        "type": "shop",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "S",
+          "N"
+        ]
+      },
+      "1,2": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "N",
+          "S"
+        ]
+      },
+      "2,2": {
+        "type": "empty",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "E"
+        ]
+      },
+      "3,2": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "E",
+          "W",
+          "N"
+        ]
+      },
+      "4,2": {
+        "type": "trap",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "S",
+          "W"
+        ]
+      },
+      "0,3": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "S",
+          "N"
+        ]
+      },
+      "1,3": {
+        "type": "treasure",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "N",
+          "E"
+        ]
+      },
+      "2,3": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "W",
+          "E"
+        ]
+      },
+      "3,3": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "W",
+          "E"
+        ]
+      },
+      "4,3": {
+        "type": "empty",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "W",
+          "S",
+          "N"
+        ]
+      },
+      "0,4": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "E",
+          "N"
+        ]
+      },
+      "1,4": {
+        "type": "empty",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "E",
+          "W"
+        ]
+      },
+      "2,4": {
+        "type": "empty",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "E",
+          "W"
+        ]
+      },
+      "3,4": {
+        "type": "shop",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "E",
+          "W"
+        ]
+      },
+      "4,4": {
+        "type": "enemy",
+        "visited": false,
+        "seen": false,
+        "doors": [
+          "N",
+          "W"
+        ]
+      }
+    }
+  }
+}
