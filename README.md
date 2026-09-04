@@ -1,21 +1,71 @@
 # Tiny Adventure
 
-A dungeon crawler in Python and tkinter. Roll up a character from one of twelve
-classes, descend through procedurally generated floors, fight what lives there,
-and try to get deep enough to meet something that has a name.
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/UI-Tkinter-2E8B57)
 
-No dependencies beyond the standard library. Run it with:
+Tiny Adventure is a desktop dungeon crawler built with Python and Tkinter. Build
+a character from one of twelve classes, descend through procedurally generated
+floors, fight dangerous enemies, collect equipment, and see how deep you can go.
 
-```
+This repository contains the complete game source, generated audio assets, and
+headless test harnesses. It uses only Python's standard library; there are no
+third-party packages to install.
+
+## Features
+
+- Twelve playable classes with subclasses, spells, class abilities, and level-ups
+- Procedurally generated dungeon floors with traps, chests, shops, camps, and bosses
+- Turn-based combat with range, cover, morale, pack tactics, and adaptive difficulty
+- Equipment, magic items, companions, resting, saving, and loading
+- Optional spoken narration and generated sound effects
+- A compact Tkinter interface designed for keyboard and mouse play
+
+## Quick start
+
+Install Python 3.10 or newer with Tkinter included, then run:
+
+```bash
 python -m tiny_adventure
 ```
 
-If tkinter is missing on Linux, install it with `sudo apt install python3-tk`.
+On Windows, you can also use `run_game.bat` for a console launch or
+`launch_game.vbs` for a window-only launch. The VBS launcher requires `pythonw`
+to be available on your PATH. See [README_LAUNCH.md](README_LAUNCH.md) for the
+desktop shortcut option and troubleshooting notes.
+
+On Linux, install Tkinter through your distribution if it is missing. For
+Debian or Ubuntu:
+
+```bash
+sudo apt install python3-tk
+```
+
+## Repository layout
+
+The playable code lives in the `tiny_adventure/` package. `mane_game.py` is a
+small compatibility launcher for the game. Tests are kept in `tests/`, while
+`soak.py` and `balance_probe.py` are developer tools for randomized crash checks
+and balance measurements.
+
+The `saves/` folder and `settings.json` contain local player data and are ignored
+by Git. They are created automatically when the game runs, so personal saves do
+not belong on the public GitHub page.
+
+## Contributing and development
+
+The game is intentionally dependency-free. Changes should preserve that unless
+a new dependency is clearly necessary. See [Testing](#testing) for the test
+harness details and [Where to edit what](#where-to-edit-what) for a guide to the
+codebase.
 
 ---
 
 ## Contents
 
+- [Features](#features)
+- [Quick start](#quick-start)
+- [Repository layout](#repository-layout)
+- [Contributing and development](#contributing-and-development)
 - [How the code is put together](#how-the-code-is-put-together)
 - [The one rule](#the-one-rule)
 - [File map](#file-map)
